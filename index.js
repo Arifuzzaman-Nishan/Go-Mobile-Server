@@ -71,6 +71,13 @@ client.connect(err => {
             })
     })
 
+    app.delete('/delete/:id',(req,res) => {
+        newMobileCollection.deleteOne({_id: ObjectID(req.params.id)})
+        .then(result => {
+            res.send(result.deletedCount > 0);
+        })
+    })
+
 
 
 
