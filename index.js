@@ -3,6 +3,7 @@ const bodyParser = require('body-parser')
 const cors = require('cors')
 const MongoClient = require('mongodb').MongoClient;
 require('dotenv').config()
+const ObjectID = require('mongodb').ObjectID
 const app = express()
 const port = 5000
 
@@ -41,6 +42,14 @@ client.connect(err => {
                 console.log("inserted count", result.insertedCount);
                 res.send(result.insertedCount > 0);
             })
+    })
+
+    app.get('/product/:id',(req,res) => {
+        newMobileCollection.find({_id: ObjectID(req.params.id)})
+        .toArray((err,documents) => {
+            res.send(documents[0])
+            // console.log(documents);
+        })
     })
 
 
