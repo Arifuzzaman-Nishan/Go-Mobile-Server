@@ -20,11 +20,9 @@ const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology:
 client.connect(err => {
     // for new data insert
     const newMobileCollection = client.db("goMobile").collection("addNewMobileInfo");
-    console.log("database connected");
 
     // for order data
     const orderCollection = client.db("goMobile").collection("order");
-    console.log("database connected");
 
     // for insert api
     app.post('/addNewMobileInfo', (req, res) => {
