@@ -64,7 +64,7 @@ client.connect(err => {
             })
     })
 
-    // for read all data
+    // for read all data from database
     app.get('/mobileInfo', (req, res) => {
         newMobileCollection.find()
             .toArray((err, items) => {
