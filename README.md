@@ -7,9 +7,9 @@ In this project you can buy different kinds of mobile. you can select one mobile
 
 ## Link:
 
-My clientSite github repo link is [Here](https://github.com/Porgramming-Hero-web-course/full-stack-client-Arifuzzaman-Nishan)
+My clientSite github repo link is [Here](https://github.com/Arifuzzaman-Nishan/Go-Mobile-Client)
 
-My serverSite github repo link is [Here](https://github.com/Porgramming-Hero-web-course/full-stack-server-Arifuzzaman-Nishan)
+My serverSite github repo link is [Here](https://github.com/Arifuzzaman-Nishan/Go-Mobile-Server)
 
 My live website link [Here](https://go-mobilee.web.app/)
 
